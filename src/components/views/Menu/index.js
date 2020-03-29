@@ -51,7 +51,7 @@ class Navbar extends Component {
                 </SubMenu>
                 <Menu.Item key="github">
                     <GithubFilled />
-                    <a href="https://ant.design" target="_blank" rel="noopener noreferrer">
+                    <a href="https://github.com/regalforlyfe" target="_blank" rel="noopener noreferrer">
                         Github Repository
                     </a>
                 </Menu.Item>
