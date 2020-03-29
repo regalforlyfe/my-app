@@ -1,0 +1,29 @@
+.ant-carousel .slick-slide {
+    text-align: center;
+    height: 400px;
+    line-height: 160px;
+    background: #c2a48a;
+    overflow: hidden;
+  }
+  
+.ant-carousel .slick-slide h3 {
+    color: #fff;
+}
+
+body {
+    background-color: #fefbf4;
+}
+
+.contain {
+    margin-top : 50px;
+    margin-bottom : 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.site-card-wrapper {
+    background: #fefbf4;
+    padding: 30px;
+    margin-left: 10%;
+    margin-right: 10%;
+  } 
