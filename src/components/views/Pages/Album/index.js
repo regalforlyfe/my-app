@@ -1,10 +1,21 @@
 import React, { Component } from 'react';
-import './profile.css';
+import './album.css';
 import Menu from '../../Menu';
 import MenuFooter from '../Footer'
-import { Layout, Carousel,Card, Col, Row } from 'antd';
+import { Layout,Card, Col, Row, notification, Button} from 'antd';
+import { SmileOutlined } from '@ant-design/icons';
 
 const { Header, Footer, Content } = Layout;
+
+const openNotification = () => {
+    notification.open({
+      message: 'Hai!',
+      description:
+        'Remember this. You carry so much love in your heart, Dont forget to give some to yourself!',
+      icon: <SmileOutlined style={{ color: '#108ee9' }} />,
+    });
+  };
+
 const card = [
     {
         title : "City of Stars",
@@ -32,7 +43,7 @@ const card = [
     },
 ];
 
-class Profile extends Component {
+class Album extends Component {
     render(){
         return(
             <div>
@@ -41,23 +52,22 @@ class Profile extends Component {
                     <Header style={{background: '#fefbf4', paddingTop:'20px'}}>
                         <Menu></Menu>
                     </Header>
-                    <Content style={{background: '#fefbf4'}}>
-                        {/* <div className="contain">
-                            <Carousel autoplay>
-                                <div>
-                                    <h3>1</h3>
-                                </div>
-                                <div>
-                                    <h3>2</h3>
-                                </div>
-                                <div>
-                                    <h3>3</h3>
-                                </div>
-                                <div>
-                                    <h3>4</h3>
-                                </div>
-                            </Carousel>
-                        </div> */}
+                    <Content style={{background: '#fefbf4'}}> 
+                        <div className="contain2">
+                            <div className="poem">
+                            <p><strong>the essence.</strong></p>
+                            <hr></hr>
+                            <p>sweetheart</p>
+                            <p>you're star</p>
+                            <p>never apologize</p>
+                            <p>for burning too bright</p>
+                            </div>
+                        </div>
+                        <Row justify="center">
+                        <Button shape="round" type="primary" style={{backgroundColor:'white'}} onClick={openNotification}>
+                            <SmileOutlined style={{ color: '#108ee9' }} />
+                        </Button>
+                        </Row>
                         <div className="site-card-wrapper">
                             <Row gutter={[32, 16]}>
                             {card.map (data=>
@@ -84,4 +94,4 @@ class Profile extends Component {
     }
 }
 
-export default Profile;
+export default Album;

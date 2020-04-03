@@ -20,7 +20,7 @@ class Navbar extends Component {
                 </Menu.Item>
                 <Menu.Item key="app">
                     <IdcardFilled />
-                    <Link to='/profile'>Profile</Link>
+                    <Link to='/album'>Album</Link>
                 </Menu.Item>
                 <SubMenu
                 title={
