@@ -21,16 +21,13 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    color: white;
+    font-size: 20px;
 }
 
 hr {
     margin-top: -15px;
     width: 100px;
-}
-
-p{
-    color: white;
-    font-size: 20px;
 }
 
 .site-card-wrapper {
